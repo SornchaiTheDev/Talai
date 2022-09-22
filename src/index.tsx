@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import ContextProvider from "./Context";
 import "./index.css";
+
 import App from "./App";
 
 const root = ReactDOM.createRoot(
@@ -8,6 +10,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ContextProvider>
+      <App />
+    </ContextProvider>
   </React.StrictMode>
 );
